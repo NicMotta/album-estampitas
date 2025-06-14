@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.text {
+  font-weight: bold;
+}
+
+.number {
+  font-size: 1.5rem;
+}
+
+.track {
+  width: 75%;
+  margin: 0 auto;
+  height: 1rem;
+  border-style: solid;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  transition: width 0.3s ease;
+}

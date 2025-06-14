@@ -1,0 +1,51 @@
+.cardWrapper {
+  width: 10rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.cardImage {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.1s ease-in-out;
+  width: 100%;
+  display: block;
+}
+
+.cardImage:hover {
+  transform: scale(1.05);
+}
+
+.cardProps {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardNumber {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.cardType {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .cardWrapper {
+    width: 6rem;
+  }
+
+  .cardNumber {
+    font-size: 0.75rem;
+  }
+
+  .cardType {
+    font-size: 0.5rem;
+  }
+}

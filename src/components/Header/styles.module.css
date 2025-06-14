@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border-style: dashed;
+}
+
+@media (min-width: 768px) {
+  .header {
+    border-radius: 0.75rem;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}

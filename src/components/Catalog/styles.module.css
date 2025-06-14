@@ -1,0 +1,15 @@
+.catalogGrid {
+  display: grid;
+  gap: 1rem;
+  max-width: 768px;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .catalogGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

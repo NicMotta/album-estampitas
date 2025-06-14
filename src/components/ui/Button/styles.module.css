@@ -1,0 +1,15 @@
+.button {
+  text-align: center;
+  background-color: var(--base-color);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--primary-color);
+  display: block;
+}

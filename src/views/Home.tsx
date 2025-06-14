@@ -1,15 +1,19 @@
 import Catalog from "../components/Catalog"
 import CardDetail from "../components/CardDetail"
 import Header from "../components/Header"
-import InfoButton from "../components/InfoButton"
 import About from "../components/About"
-import ProgressBar from "../components/ProgressBar"
+import ProgressBar from "../components/ui/ProgressBar"
+import FooterButton from "../components/FooterButton"
+import AddCard from "../components/AddCard"
+import IdeaModal from "../components/IdeaModal"
 import { useStore } from "@nanostores/react"
-import { $isOpen, $isOpenAbout } from "../utils/store"
+import { $isOpen, $isOpenAbout, $isOpenAddCard, $isOpenIdea } from "../utils/store"
 
 export default function Home() {
   const isOpen = useStore($isOpen);
   const isOpenAbout = useStore($isOpenAbout);
+  const isOpenAddCard = useStore($isOpenAddCard);
+  const isOpenIdea = useStore($isOpenIdea);
 
   return (
     <>
@@ -17,8 +21,10 @@ export default function Home() {
       <ProgressBar progress={3} />
       <Catalog />
       {isOpen && <CardDetail />}
-      <InfoButton onClick={() => $isOpenAbout.set(true)} />
       {isOpenAbout && <About />}
+      {isOpenAddCard && <AddCard />}
+      {isOpenIdea && <IdeaModal />}
+      <FooterButton />
     </>
   );
 }

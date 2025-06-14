@@ -5,5 +5,11 @@ export interface CardList {
   image: string;
   hash: string;
   haveIt: boolean;
-  cover: 'default' | 'alternative'
+  cover: 'default' | 'alternative';
+  type: string
+}
+
+export interface UserData {
+  id: string | undefined;
+  email: string | undefined;
 }

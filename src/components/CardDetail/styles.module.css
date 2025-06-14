@@ -1,0 +1,30 @@
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.cardContainer {
+  position: relative;
+  margin: 1.5rem;
+  width: 400px;
+  perspective: 1000px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardImage {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+  display: block;
+}

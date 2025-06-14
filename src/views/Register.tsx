@@ -1,34 +1,37 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { supabase } from '../api/supabaseClient';
-import { $user } from '../utils/store';
-import { ROUTE_HOME, ROUTE_REGISTER, ROUTE_PASSWORD_RECOVERY } from '../utils/routes';
+import { ROUTE_LOGIN } from '../utils/routes';
 
-export default function Login() {
+export default function Register() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [userName, setUserName] = useState('');
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
-    const { data, error } = await supabase.auth.signInWithPassword({
+    const { error } = await supabase.auth.signUp({
       email,
-      password
+      password,
+      options: {
+        data: {
+          displayName: userName
+        }
+      }
     })
 
     if (error) {
       setError(error.message);
     } else {
       setError(null);
-      $user.set({ email: data.user.email, id: data.user.id })
-      navigate(ROUTE_HOME)
+      navigate(ROUTE_LOGIN)
     }
   };
 
   return (
     <form onSubmit={handleLogin}>
-      <h1>Iniciar sesión</h1>
       <input
         type="email"
         placeholder="Email"
@@ -36,31 +39,20 @@ export default function Login() {
         onChange={e => setEmail(e.target.value)}
       />
       <input
+        type="text"
+        placeholder="Usuario"
+        value={userName}
+        onChange={e => setUserName(e.target.value)}
+      />
+      <input
         type="password"
         placeholder="Contraseña"
         value={password}
         onChange={e => setPassword(e.target.value)}
       />
-      {error && <p >{error}</p>}
-      <button type="submit" >
-        Ingresar
-      </button>
-
-      <button
-        type="button"
-        onClick={() => {
-          navigate(ROUTE_REGISTER)
-        }}
-      >
+      {error && <p>{error}</p>}
+      <button type="submit">
         Registrarse
-      </button>
-        <button
-        type="button"
-        onClick={() => {
-          navigate(ROUTE_PASSWORD_RECOVERY)
-        }}
-      >
-        Recuperar contraseña
       </button>
     </form>
   );

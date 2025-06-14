@@ -4,15 +4,20 @@ import SantaEstefania from '../assets/estampitas/santa-estefania.png'
 import SantaSarita from '../assets/estampitas/santa-sarita.png'
 import type { CardList } from "../utils/types";
 
+export const LOCAL_STORAGE_KEY = 'sb-xugzdunpluthnhpcngpg-auth-token'
+export const TOTAL_CARDS = 12
+export const UNKNOWN_CARD = '????'
+
 export const CARD_LIST: CardList[] = [
   {
     id: 1,
     title: "San Marcos",
     description: "Estampita 1",
     image: SanMarcos,
-    hash: "maSnnhuk8HigTN765GI63GI",
+    hash: "GI63RD",
     haveIt: true,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
     id: 2,
@@ -21,7 +26,8 @@ export const CARD_LIST: CardList[] = [
     image: SantaEstefania,
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: true,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
     id: 3,
@@ -30,87 +36,97 @@ export const CARD_LIST: CardList[] = [
     image: SantaSarita,
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'alternative'
+    cover: 'alternative',
+    type: 'frontend'
   },
   {
-    id: 1,
+    id: 4,
     title: "San Nicolás",
     description: "Estampita 1",
     image: SanNicolas,
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: true,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
-    id: 2,
+    id: 5,
     title: "San Franco",
     description: "Estampita 2",
     image: "../assets/estampitas/santa-estefania.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'default'
+    cover: 'default',
+    type: 'so'
   },
   {
-    id: 3,
+    id: 6,
     title: "San Martin",
     description: "Estampita 3",
     image: "../assets/estampitas/santa-sarita.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'alternative'
+    cover: 'alternative',
+    type: 'FTL'
   },
   {
-    id: 1,
+    id: 7,
     title: "San Elkin",
     description: "Estampita 1",
     image: "../assets/estampitas/san-marcos.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
-    id: 2,
+    id: 8,
     title: "Santa Iara",
     description: "Estampita 2",
     image: "../assets/estampitas/santa-estefania.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'alternative'
+    cover: 'alternative',
+    type: 'frontend'
   },
   {
-    id: 3,
+    id: 9,
     title: "Santa Ruth",
     description: "Estampita 3",
     image: "../assets/estampitas/santa-sarita.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'alternative'
+    cover: 'alternative',
+    type: 'funcional'
   },
   {
-    id: 1,
+    id: 10,
     title: "Santa Catalina",
     description: "Estampita 1",
     image: "../assets/estampitas/san-marcos.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
-    id: 2,
+    id: 11,
     title: "Santa Estefanía",
     description: "Estampita 2",
     image: "../assets/estampitas/santa-estefania.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   },
   {
-    id: 3,
+    id: 12,
     title: "Santa Sarita",
     description: "Estampita 3",
     image: "../assets/estampitas/santa-sarita.png",
     hash: "maSnnhuk8HigTN765GI63GI",
     haveIt: false,
-    cover: 'default'
+    cover: 'default',
+    type: 'frontend'
   }
 ]
