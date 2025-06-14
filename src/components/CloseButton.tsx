@@ -4,7 +4,7 @@ interface Props {
 
 export default function CloseButton ( { onClick }: Props) {
   return <button
-    className="fixed bottom-12 left-1/2 -translate-x-1/2 text-center bg-[#f0d399] p-2 rounded-lg"
+    className="fixed bottom-12 left-1/2 -translate-x-1/2 text-center bg-[#f0d399] p-2 rounded-xl"
     onClick={onClick}
   >
     <svg className="w-12 h-12 text-[#603401]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
