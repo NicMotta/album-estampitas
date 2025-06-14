@@ -19,5 +19,5 @@ export function isAuthenticated() {
 }
 
 export function binaryConvert(numero: number, longitudMinima: number = 4): string {
-  return `#${numero.toString(2).padStart(longitudMinima, '0')}`;
+  return `[${numero.toString(2).padStart(longitudMinima, '0')}]`;
 }

@@ -21,8 +21,8 @@ export default function Card({ image, haveIt, onClick, cover, number, type }: Ca
         alt=""
       />
       <div className={styles.cardProps}>
-        <p className={styles.cardNumber}>{haveIt ? binaryConvert(number) : UNKNOWN_CARD}</p>
-        <p className={styles.cardType}>{haveIt ? type : UNKNOWN_CARD}</p>
+        <h5 className={styles.cardNumber}>{haveIt ? binaryConvert(number) : UNKNOWN_CARD}</h5>
+        <h5 className={styles.cardType}>{haveIt ? type : UNKNOWN_CARD}</h5>
       </div>
     </div>
   );
