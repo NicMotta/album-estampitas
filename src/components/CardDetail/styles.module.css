@@ -28,3 +28,9 @@
   height: auto;
   display: block;
 }
+
+@media (max-width: 768px) {
+  .cardContainer {
+    width: 300px;
+  }
+}
