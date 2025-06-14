@@ -1,0 +1,14 @@
+interface Props {
+  onClick: () => void
+}
+
+export default function InfoButton ( { onClick }: Props) {
+  return <button
+    className="fixed bottom-8 right-8 text-center bg-[#f0d399] p-2 rounded-lg shadow"
+    onClick={onClick}
+  >
+    <svg className="w-12 h-12 text-[#603401]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.529 9.988a2.502 2.502 0 1 1 5 .191A2.441 2.441 0 0 1 12 12.582V14m-.01 3.008H12M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+    </svg>
+  </button>
+}

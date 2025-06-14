@@ -1,17 +1,30 @@
-import Catalog from "./components/Catalog"
-import CardDetail from "./components/CardDetail"
-import Header from "./components/Header"
-import { useStore } from "@nanostores/react"
-import { $isOpen } from "./utils/store"
+import { Routes, Route, Navigate } from "react-router";
+import Home from "./views/Home";
+import Login from "./views/Login";
 
 export default function App() {
-  const isOpen = useStore($isOpen);
+  function isAuthenticated() {
+  // Esto puede venir de un context, store, localStorage, etc.
+  return localStorage.getItem("token") === null;
+}
+
+function PrivateRoute({ children }: { children: React.ReactNode }) {
+  return isAuthenticated() ? children : <Navigate to="/login" replace />;
+}
 
   return (
     <>
-      <Header />
-      <Catalog />
-      {isOpen && <CardDetail />}
+    <Routes>
+        <Route
+          path="/"
+          element={
+            <PrivateRoute>
+              <Home />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+      </Routes>
     </>
   )
 }

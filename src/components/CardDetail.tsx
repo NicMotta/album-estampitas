@@ -43,7 +43,7 @@ export default function CardDetail() {
   container.addEventListener("mouseleave", handleMouseLeave);
 
   return () => {
-    document.body.style.overflow = "auto"; // restaurar scroll
+    document.body.style.overflow = "auto";
     container.removeEventListener("mousemove", handleMouseMove);
     container.removeEventListener("mouseleave", handleMouseLeave);
   };
@@ -53,18 +53,18 @@ export default function CardDetail() {
   return (
     <div>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.85)] z-[9999] flex justify-center items-center transition-opacity duration-300 ${
+        className={`fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.888)] z-[9999] flex justify-center items-center transition-opacity duration-300 ${
           show ? "opacity-100" : "opacity-0"
         }`}
       >
         <div
           ref={containerRef}
-          className="relative"
+          className="relative m-6"
           style={{ perspective: "1000px", width: "400px" }}
         >
           <div
             ref={cartaRef}
-            className="w-full h-full bg-white rounded-2xl transition-transform duration-150 ease-out"
+            className="w-full h-full bg-white rounded-2xl transition-transform duration-100 ease-out"
             style={{
               transformStyle: "preserve-3d",
               boxShadow: "0 10px 30px rgba(0, 0, 0, 0.2)",

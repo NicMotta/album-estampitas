@@ -4,7 +4,7 @@ import { $cardSelected, $isOpen } from "../utils/store"
 
 export default function Catalog () {
   return (
-    <div className="flex gap-4 max-w-3xl flex-wrap m-auto my-8 p-2">
+    <div className="grid gap-4 max-w-3xl grid-cols-2 md:grid-cols-4 m-auto my-8 p-2">
       {
         CARD_LIST.map((card, index) => (
           <Card
