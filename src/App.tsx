@@ -1,16 +1,16 @@
-import { Routes, Route, Navigate } from "react-router";
+import { Routes, Route } from "react-router";
 import Home from "./views/Home";
 import Login from "./views/Login";
 import Register from "./views/Register";
 import PasswordRecovery from "./views/PasswordRecovery";
 import { ROUTE_HOME, ROUTE_LOGIN, ROUTE_REGISTER, ROUTE_PASSWORD_RECOVERY } from "./utils/routes";
-import { isAuthenticated } from "./utils/helpers";
+// import { isAuthenticated } from "./utils/helpers";
 
 export default function App() {
 
-  function PrivateRoute({ children }: { children: React.ReactNode }) {
-    return isAuthenticated() ? children : <Navigate to={ROUTE_LOGIN} replace />;
-  }
+  // function PrivateRoute({ children }: { children: React.ReactNode }) {
+  //   return isAuthenticated() ? children : <Navigate to={ROUTE_LOGIN} replace />;
+  // }
 
   return (
     <Routes>
