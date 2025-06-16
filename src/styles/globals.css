@@ -13,3 +13,12 @@
   align-items: center;
   transition: opacity 100ms ease-in-out;
 }
+
+body {
+  background-color: #F8F1E4;
+  /* background-color: #2F2F2F; */
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

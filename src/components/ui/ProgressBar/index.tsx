@@ -10,9 +10,9 @@ export default function ProgressBar({ progress }: Props) {
 
   return (
     <div className={styles.wrapper}>
-      <p className={styles.text}>
+      <h5 className={styles.text}>
         COLECCIÓN <span className={styles.number}>{progress}</span>/{TOTAL_CARDS}
-      </p>
+      </h5>
       <div className={styles.track}>
         <div
         className={styles.fill}

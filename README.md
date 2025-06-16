@@ -52,3 +52,23 @@ Patrono de los TypeScripters. Nunca dejó de tipar ni aunque todo el proyecto fu
 
 Sticker nuevo o resaltado
 Cuando ganás una nueva stampita, marcarla brevemente como “Nuevo” con una etiqueta o efecto glow.
+
+## Prompts
+
+Objetivo:
+Una ilustración digital estilizada, inspirada en la iconografía religiosa de santos. El retrato muestra a una persona desde el pecho hacia arriba, con colores planos y trazos negros. Está rodeada por un arreglo floral y símbolos representativos del mundo de la tecnología.
+Además tiene simbología de: (por ejemplo: el logo de React, libros de TypeScript, íconos de desarrollo frontend).
+La figura sostiene un objeto simbólico. El fondo incluye un halo dorado circular. En la parte inferior hay una cinta en forma de papiro con el nombre del santo en letras mayúsculas ("San [Nombre]"). El estilo es gráfico, simétrico y vintage, con una paleta de colores cálidos (tonos tierra, naranjas, marrones y azul profundo). La imagen está enmarcada por un borde decorativo.
+Elementos simbólicos:
+
+Tech: React, Vue, TS, GitHub, comandos, teclado, etc.
+
+Otros: fútbol, música, vela, bastón, libro sagrado del código.
+
+Paleta de colores: cálida, fría, pastel, monocromática, etc.
+
+Estilo artístico adicional: podés agregar cosas como:
+
+“inspirado en vitrales religiosos”
+
+“con estilo de grabado antiguo”

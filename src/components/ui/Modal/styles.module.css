@@ -11,14 +11,17 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: var(--base-color);
+  background-color: var(--color-base);
   padding: 1.5rem;
   border-radius: 0.5rem;
   max-width: 42rem;
   margin: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: bold;
+  text-transform: uppercase;
 }

@@ -5,6 +5,8 @@ export const $isOpen = atom<boolean>(false)
 export const $isOpenAbout = atom<boolean>(false)
 export const $isOpenAddCard = atom<boolean>(false)
 export const $isOpenIdea = atom<boolean>(false)
+export const $isLoading = atom<boolean>(false)
+export const $isExploding = atom<boolean>(true)
 
 export const $cardSelected = map<CardList>({
   description: '',
@@ -14,7 +16,8 @@ export const $cardSelected = map<CardList>({
   id: 0,
   image: '',
   cover: 'default',
-  type: ''
+  type: '',
+  binary: ''
 })
 
 export const $user = map<UserData>({

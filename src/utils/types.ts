@@ -1,5 +1,6 @@
 export interface CardList {
   id: number;
+  binary: string;
   title: string;
   description: string;
   image: string;

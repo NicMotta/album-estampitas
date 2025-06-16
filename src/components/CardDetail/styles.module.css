@@ -19,7 +19,23 @@
   border-radius: 1rem;
   transition: transform 0.1s ease-out;
   transform-style: preserve-3d;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardDetailContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardDetail {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  font-weight: bold;
+  text-align: center;
+  border: 2px dashed var(--color-white);
+  text-transform: uppercase;
 }
 
 .cardImage {
@@ -27,6 +43,15 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
 }
 
 @media (max-width: 768px) {

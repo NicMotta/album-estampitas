@@ -1,6 +1,6 @@
 .button {
   text-align: center;
-  background-color: var(--base-color);
+  background-color: var(--color-base);
   padding: 0.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -10,6 +10,6 @@
 .icon {
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--primary-color);
+  color: var(--color-primary);
   display: block;
 }

@@ -4,12 +4,13 @@ import { useStore } from "@nanostores/react";
 import Button from "../ui/Button";
 import { getCoverImage } from "../../utils/helpers";
 import styles from "./styles.module.css";
+import { UNKNOWN_CARD, UNKNOWN_TYPE } from "../../utils/constants";
 
 export default function CardDetail() {
   const cartaRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [show, setShow] = useState(false);
-  const { image, haveIt, cover } = useStore($cardSelected);
+  const { image, haveIt, cover, type, binary } = useStore($cardSelected);
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -31,7 +32,6 @@ export default function CardDetail() {
       const rotateY = deltaX * -10;
 
       carta.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      carta.style.boxShadow = `${-deltaX * 20}px ${deltaY * 20}px 30px rgba(0, 0, 0, 0.3)`;
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -47,7 +47,6 @@ export default function CardDetail() {
 
     const resetStyle = () => {
       carta.style.transform = "rotateX(0deg) rotateY(0deg)";
-      carta.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.2)";
     };
 
     container.addEventListener("mousemove", handleMouseMove);
@@ -71,6 +70,10 @@ export default function CardDetail() {
       >
         <div ref={containerRef} className={styles.cardContainer}>
           <div ref={cartaRef} className={styles.card}>
+            <div className={styles.cardDetailContainer}>
+              <h5 className={styles.cardDetail}>{haveIt ? binary : UNKNOWN_CARD}</h5>
+              <h5 className={styles.cardDetail}>{haveIt ? type : UNKNOWN_TYPE}</h5>
+            </div>
             <img
               src={haveIt ? image : getCoverImage(cover)}
               alt=""

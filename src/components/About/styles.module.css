@@ -1,32 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
-
-.visible {
-  opacity: 1;
-}
-
-.hidden {
-  opacity: 0;
-}
-
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  background-color: var(--base-color);
-  padding: 1rem;
-  border-radius: 0.5rem;
-  max-width: 42rem;
-  margin: 1rem;
+  text-align: left;
 }
 
-.title {
-  font-size: 1.5rem;
-  font-weight: bold;
+.item {
+  margin-bottom: 1rem;
 }
