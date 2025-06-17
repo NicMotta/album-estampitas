@@ -5,21 +5,8 @@
   padding: 1rem;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to top, white, transparent);
+  background: linear-gradient(to top, var(--color-primary), transparent);
   z-index: 1000;
   justify-content: space-between;
-}
-
-.infoButton {
-  background-color: var(--color-base);
-  padding: 0.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  border: none;
-  cursor: pointer;
-}
-
-.infoIcon {
-  width: 3rem;
-  height: 3rem;
+  height: 10rem;
 }

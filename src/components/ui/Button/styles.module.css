@@ -5,11 +5,13 @@
   border-radius: 0.75rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  border: 2px dashed var(--color-primary);
+  color: var(--color-primary);
 }
 
 .icon {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 4rem;
+  height: 4rem;
   color: var(--color-primary);
   display: block;
 }
