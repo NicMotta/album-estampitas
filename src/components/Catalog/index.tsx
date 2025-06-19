@@ -15,7 +15,6 @@ export default function Catalog() {
             haveIt={card.haveIt}
             cover={card.cover}
             number={card.id}
-            type={card.type}
             binary={card.binary}
             onClick={() => {
               $cardSelected.set(card);
