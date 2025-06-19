@@ -1,6 +1,6 @@
 .input {
   padding: 0.5rem;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-dark);
   border-radius: 0.375rem;
   width: 100%;
   max-width: 300px;
@@ -9,6 +9,6 @@
 }
 
 input::placeholder {
-  color: var(--color-primary);
+  color: var(--color-dark);
   opacity: 0.5;
 }

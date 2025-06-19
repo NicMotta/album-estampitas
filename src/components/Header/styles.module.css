@@ -6,8 +6,9 @@
   gap: 1rem;
   margin: 0.5rem;
   padding: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   border-style: dashed;
+  border-color: var(--color-ligth);
 }
 
 @media (min-width: 768px) {
@@ -20,7 +21,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  color: var(--color-primary);
+  color: var(--color-ligth);
 }
 
 @media (min-width: 768px) {

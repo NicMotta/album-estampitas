@@ -81,7 +81,7 @@ export default function CardDetail() {
             />
           </div>
         </div>
-        <Button type="close" onClick={() => $isOpen.set(false)} />
+        <Button type="close" onClick={() => $isOpen.set(false)} darkMode/>
       </div>
     </div>
   );

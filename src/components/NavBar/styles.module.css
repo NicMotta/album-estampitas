@@ -1,0 +1,29 @@
+.navBar {
+  position: fixed;
+  bottom: 0;
+  height: 4.5rem;
+  width: 100%;
+  background-color: var(--color-light);
+}
+
+.infoButtonContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  height: 4.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.centerButton {
+  background-color: var(--color-accent);
+}

@@ -6,14 +6,15 @@ interface Props {
   size?: string
   icon?: string
   type?: 'close'
+  darkMode?: boolean
   className?: string
   onClick: () => void
 }
 
-export default function ButtonUi({ onClick, text, icon, type, className }: Props) {
+export default function ButtonUi({ onClick, text, icon, type, className, darkMode }: Props) {
   return (
     <button
-      className={`${styles.button} ${className}`}
+      className={`${styles.button} ${className} ${darkMode && styles.buttonInvert}`}
       onClick={onClick}
       aria-label={text}
     >

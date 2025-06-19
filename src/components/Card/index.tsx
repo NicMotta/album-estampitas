@@ -17,7 +17,7 @@ export default function Card({ image, haveIt, onClick, cover, type, binary }: Ca
   return (
     <div className={styles.cardWrapper} onClick={onClick}>
       <img
-        className={styles.cardImage}
+        className={`${styles.cardImage} ${!haveIt && styles.cardImageEmpty}`}
         src={haveIt ? image : getCoverImage(cover)}
         alt=""
       />

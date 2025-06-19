@@ -1,17 +1,21 @@
 .button {
   text-align: center;
-  background-color: var(--color-base);
+  background-color: var(--color-dark);
   padding: 0.5rem;
   border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  border: 2px dashed var(--color-primary);
-  color: var(--color-primary);
+  color: var(--color-light);
+}
+
+.buttonInvert {
+  background-color: var(--color-accent);
+  color: var(--color-dark);
 }
 
 .icon {
-  width: 4rem;
-  height: 4rem;
-  color: var(--color-primary);
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: auto;
+  color: var(--color-dark);
   display: block;
 }

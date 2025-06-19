@@ -3,7 +3,7 @@ import CardDetail from "../components/CardDetail"
 import Header from "../components/Header"
 import About from "../components/About"
 import ProgressBar from "../components/ui/ProgressBar"
-import FooterButton from "../components/FooterButton"
+import NavBar from "../components/NavBar"
 import AddCard from "../components/AddCard"
 import IdeaModal from "../components/IdeaModal"
 import Loader from "../components/ui/Loader"
@@ -27,7 +27,7 @@ export default function Home() {
       {isOpenAbout && <About />}
       {isOpenAddCard && <AddCard />}
       {isOpenIdea && <IdeaModal />}
-      <FooterButton />
+      <NavBar />
     </>
   );
 }

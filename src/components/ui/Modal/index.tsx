@@ -28,7 +28,7 @@ export default function Modal( { title, children, onClose }: Props ) {
         <h2 className={styles.title}>{title}</h2>
         {children}
       </div>
-      <Button onClick={onClose} type="close" />
+      <Button onClick={onClose} type="close" darkMode/>
     </div>
   );
 }

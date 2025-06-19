@@ -11,6 +11,7 @@
 
 .number {
   font-size: 1.5rem;
+  color: var(--color-accent);
 }
 
 .track {
@@ -20,11 +21,12 @@
   border-style: solid;
   border-radius: 1rem;
   overflow: hidden;
+  color: var(--color-accent);
 }
 
 .fill {
   height: 100%;
-  background-color: black;
+  background-color: var(--color-accent);
   border-radius: 1rem;
   transition: width 0.3s ease;
 }
